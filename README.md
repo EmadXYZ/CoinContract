@@ -45,5 +45,4 @@ This project is licensed under the **MIT License** – feel free to use, modify,
 
 ```bash
 git clone https://github.com/EmadXYZ/SimpleToken.git
-cd SimpleToken
 ```
