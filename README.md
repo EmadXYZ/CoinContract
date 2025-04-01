@@ -3,7 +3,7 @@
 A **lightweight**, **efficient**, and **gas-optimized** on-chain token for transferring value on **zkSync**. This contract allows for **minting, sending, and tracking balances** in a straightforward way.  
 
 🔗 **Live Contract on zkSync**:  
-[✅ View on zkSync Explorer](PLACEHOLDER_FOR_DEPLOYMENT_LINK)  
+[✅ View on zkSync Explorer](https://sepolia.explorer.zksync.io/address/0xcdAc667d23C75f7E158A6BddD8BbeCB9e7aC7721#contract)  
 
 ---  
 
