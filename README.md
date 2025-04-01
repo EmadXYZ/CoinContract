@@ -1,44 +1,55 @@
-# CoinContract
+# 💰 SimpleToken – A Minimal ERC-20 Style Token  
 
-A Solidity-based smart contract for creating and managing a custom cryptocurrency on the Ethereum blockchain. This project implements a basic token system with minting and transfer functionalities, designed for educational purposes and as a starting point for more complex token implementations.
+A **lightweight**, **gas-efficient**, and **fully on-chain** token contract built on **zkSync Sepolia Testnet**. This smart contract allows for **minting**, **transfers**, and **balance tracking** while ensuring security and efficiency.  
 
-## Project Overview
+🔗 **Live Contract on zkSync**:  
+[✅ View on zkSync Explorer](#link-to-contract) *(Coming Soon!)*  
 
-`CoinContract` provides a simple yet functional token contract (`Coin.sol`) written in Solidity. It allows a designated minter (the contract deployer) to create new tokens and enables users to transfer tokens between addresses. The contract includes essential features like balance tracking, total supply management, and event logging for transparency, making it a great example for learning Ethereum smart contract development.
+---
 
-### Key Features
-- **Minting**: Only the contract deployer (minter) can mint new tokens and assign them to any address.
-- **Token Transfer**: Users can transfer tokens to other addresses, with checks for sufficient balance.
-- **Balance Inquiry**: Anyone can query the token balance of any address.
-- **Event Logging**: Emits events for minting and transfers to ensure transparency and traceability.
-- **Error Handling**: Includes a custom error for insufficient balance during transfers, improving user experience and debugging.
+## 📜 Overview  
 
-## Contract Details
+- **Language:** Solidity (`^0.8.26`)  
+- **Network:** zkSync Sepolia Testnet  
+- **Purpose:** A **simple, gas-optimized token** with minting & transfers.  
 
-- **Solidity Version**: `^0.8.26`
-- **License**: MIT
-- **Contract Name**: `Coin`
-- **State Variables**:
-  - `minter`: The address of the contract deployer, who has the sole authority to mint new tokens.
-  - `balances`: A mapping to track the token balance of each address.
-  - `totalSupply`: Tracks the total number of tokens minted.
-- **Functions**:
-  - `mint(address receiver, uint256 amount)`: Mints new tokens to a specified address (only callable by the minter).
-  - `send(address receiver, uint256 amount)`: Transfers tokens from the sender to another address, with balance and amount validations.
-  - `balanceOf(address account)`: Returns the token balance of a given address.
-- **Events**:
-  - `Minted(address receiver, uint256 amount)`: Emitted when new tokens are minted.
-  - `Sent(address from, address to, uint256 amount)`: Emitted when tokens are transferred.
+---
 
-## Getting Started
+## ⚡ Key Features  
 
-### Prerequisites
-- [Solidity](https://soliditylang.org/) compiler (`^0.8.26`)
-- An Ethereum development environment, such as:
-  - [Remix IDE](https://remix.ethereum.org/) (for quick testing and deployment)
-  - [Hardhat](https://hardhat.org/) or [Truffle](https://trufflesuite.com/) (for advanced development and testing)
+✔ **Minter Role** – Only the contract creator can **mint new tokens**.  
+✔ **Secure Transfers** – Users can safely send tokens to other addresses.  
+✔ **Balance Tracking** – Anyone can query an address’s balance.  
+✔ **Custom Errors** – Reduces gas fees by using `error InsufficientBalance()`.  
+✔ **Optimized for zkSync** – Lower fees and faster transactions on **Layer 2**.  
+✔ **Minimal & Efficient** – A **basic token model** without unnecessary overhead.  
 
-### Installation
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/EmadXYZ/CoinContract.git 
+---
+
+## 🔍 Security Considerations  
+
+- **Restricted Minting**: Only the **original contract deployer** can mint tokens.  
+- **Safe Transfers**: Ensures balances are checked before executing transfers.  
+- **Gas Optimization**: Uses **custom errors** to **reduce transaction costs**.  
+- **Designed for zkSync**: Efficient **Layer 2** execution with low fees.  
+
+
+
+---
+
+## 📄 License  
+
+This project is licensed under the **MIT License** – you're free to use, modify, and distribute it!  
+
+📌 **Contributions are welcome! Feel free to fork, improve, and submit a pull request.** 🤝  
+
+
+---
+
+## 📥 Clone the Repository  
+
+To get a local copy up and running, run the following command:  
+
+```sh
+git clone https://github.com/EmadXYZ/SimpleToken.git
+```
