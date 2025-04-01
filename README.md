@@ -9,7 +9,7 @@ A **lightweight**, **efficient**, and **gas-optimized** on-chain token for trans
 
 ## 📜 Overview  
 
-- **Language:** Solidity (`^0.8.26`)  
+- **Language:** Solidity (`^0.8.24`)  
 - **Network:** zkSync  
 - **Purpose:** A **simple token** for tracking balances and performing direct transfers.  
 
