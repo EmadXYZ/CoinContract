@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.26;
+pragma solidity ^0.8.24;
 
 contract Coin {
     // The minter address is the only one allowed to mint new coins.
@@ -38,7 +38,9 @@ contract Coin {
     // Ensures the sender has enough balance before transferring.
     function send(address receiver, uint256 amount) public {
         require(amount > 0, "Amount must be greater than zero"); // Ensure valid transfer amount
-        require(amount <= balances[msg.sender], InsufficientBalance(amount, balances[msg.sender])); // Check sender balance
+        if (amount > balances[msg.sender]) {
+            revert InsufficientBalance(amount, balances[msg.sender]); // Check sender balance
+        }
 
         balances[msg.sender] -= amount; // Deduct from sender's balance
         balances[receiver] += amount; // Add to receiver's balance
