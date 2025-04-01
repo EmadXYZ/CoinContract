@@ -1,55 +1,49 @@
-# 💰 SimpleToken – A Minimal ERC-20 Style Token  
+# 💰 SimpleToken – A Minimalistic On-Chain Token  
 
-A **lightweight**, **gas-efficient**, and **fully on-chain** token contract built on **zkSync Sepolia Testnet**. This smart contract allows for **minting**, **transfers**, and **balance tracking** while ensuring security and efficiency.  
+A **lightweight**, **efficient**, and **gas-optimized** on-chain token for transferring value on **zkSync**. This contract allows for **minting, sending, and tracking balances** in a straightforward way.  
 
 🔗 **Live Contract on zkSync**:  
-[✅ View on zkSync Explorer](#link-to-contract) *(Coming Soon!)*  
+[✅ View on zkSync Explorer](PLACEHOLDER_FOR_DEPLOYMENT_LINK)  
 
----
+---  
 
 ## 📜 Overview  
 
 - **Language:** Solidity (`^0.8.26`)  
-- **Network:** zkSync Sepolia Testnet  
-- **Purpose:** A **simple, gas-optimized token** with minting & transfers.  
+- **Network:** zkSync  
+- **Purpose:** A **simple token** for tracking balances and performing direct transfers.  
 
----
+---  
 
 ## ⚡ Key Features  
 
-✔ **Minter Role** – Only the contract creator can **mint new tokens**.  
-✔ **Secure Transfers** – Users can safely send tokens to other addresses.  
-✔ **Balance Tracking** – Anyone can query an address’s balance.  
-✔ **Custom Errors** – Reduces gas fees by using `error InsufficientBalance()`.  
-✔ **Optimized for zkSync** – Lower fees and faster transactions on **Layer 2**.  
-✔ **Minimal & Efficient** – A **basic token model** without unnecessary overhead.  
+✔ **Minting Mechanism** – Only the creator (`minter`) can mint new tokens.  
+✔ **Direct Transfers** – Users can send tokens securely without intermediaries.  
+✔ **Balance Tracking** – Keeps track of each user's token balance.  
+✔ **Gas Efficient** – Optimized for **low-cost transactions** on zkSync.  
+✔ **Secure Transactions** – Includes error handling for insufficient balances.  
 
----
+---  
 
 ## 🔍 Security Considerations  
 
-- **Restricted Minting**: Only the **original contract deployer** can mint tokens.  
-- **Safe Transfers**: Ensures balances are checked before executing transfers.  
-- **Gas Optimization**: Uses **custom errors** to **reduce transaction costs**.  
-- **Designed for zkSync**: Efficient **Layer 2** execution with low fees.  
+- **Controlled Minting:** Only the contract deployer (minter) can create new tokens.  
+- **Balance Verification:** Prevents transfers if the sender lacks sufficient balance.  
+- **Efficient Storage:** Uses a **mapping-based** balance system for efficiency.  
 
-
-
----
+---  
 
 ## 📄 License  
 
-This project is licensed under the **MIT License** – you're free to use, modify, and distribute it!  
+This project is licensed under the **MIT License** – feel free to use, modify, and build upon it!  
 
-📌 **Contributions are welcome! Feel free to fork, improve, and submit a pull request.** 🤝  
+📌 **Contributions are welcome! Fork the repo and submit your improvements.** 🚀  
 
+---  
 
----
+## 🔧 Clone & Use  
 
-## 📥 Clone the Repository  
-
-To get a local copy up and running, run the following command:  
-
-```sh
+```bash
 git clone https://github.com/EmadXYZ/SimpleToken.git
+cd SimpleToken
 ```
